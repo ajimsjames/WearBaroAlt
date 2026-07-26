@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.wearbaroalt.app-release-53:/drawable_ic_launcher.xml.flat",
+        "source": "com.example.wearbaroalt.app-main-54:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.wearbaroalt.app-release-53:/drawable_ic_launcher_round.xml.flat",
+        "source": "com.example.wearbaroalt.app-main-54:/drawable/ic_launcher_round.xml"
+    }
+]
