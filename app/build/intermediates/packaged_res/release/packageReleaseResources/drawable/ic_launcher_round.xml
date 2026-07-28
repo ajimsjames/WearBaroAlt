@@ -14,19 +14,14 @@
                 android:endX="104"
                 android:endY="104"
                 android:type="linear">
-                <item android:offset="0.0" android:color="#FFFFB300" />
-                <item android:offset="1.0" android:color="#FFE65100" />
+                                <item android:offset="0.0" android:color="#FF00BFA5" />\n                <item android:offset="1.0" android:color="#FF004D40" />
             </gradient>
         </aapt:attr>
     </path>
     <path
-        android:pathData="M 30,68 A 30,30 0 1,1 78,68"
+        android:pathData="M 30,76 L 54,36 L 78,76 M 46,76 L 58,58 L 70,76"
         android:strokeColor="#FFFFFF"
-        android:strokeWidth="5"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M 54,54 L 68,36"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="4"
-        android:strokeLineCap="round" />
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>
