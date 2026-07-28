@@ -44,7 +44,7 @@ fun BaroAltScreen() {
 
     var pressureHpa by remember { mutableStateOf(1013.25f) }
     var seaLevelQnhHpa by remember { mutableStateOf(1013.25f) }
-    var pressureHistory by remember { mutableStateOf(listOf(1015.2f, 1014.8f, 1014.1f, 1013.8f, 1013.25f)) }
+    var pressureHistory by remember { mutableStateOf<List<Float>>(emptyList()) }
 
     val currentAltitudeMeters = SensorManager.getAltitude(seaLevelQnhHpa, pressureHpa)
     val currentAltitudeFeet = currentAltitudeMeters * 3.28084f
@@ -65,7 +65,10 @@ fun BaroAltScreen() {
                 event?.let { e ->
                     if (e.sensor.type == Sensor.TYPE_PRESSURE && e.values.isNotEmpty()) {
                         pressureHpa = e.values[0]
-                        if (pressureHistory.isEmpty() || Math.abs(pressureHistory.last() - pressureHpa) > 0.1f) {
+                        if (pressureHistory.isEmpty()) {
+                            // Seed initial history with actual reading to avoid sudden drop warning
+                            pressureHistory = List(5) { pressureHpa }
+                        } else if (Math.abs(pressureHistory.last() - pressureHpa) > 0.05f) {
                             pressureHistory = (pressureHistory.takeLast(19) + pressureHpa)
                         }
                     }
@@ -91,7 +94,7 @@ fun BaroAltScreen() {
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
-            contentPadding = PaddingValues(top = 40.dp, bottom = 24.dp)
+            contentPadding = PaddingValues(top = 52.dp, bottom = 24.dp)
         ) {
             when (selectedTab) {
                 BaroTab.BAROMETER -> {
