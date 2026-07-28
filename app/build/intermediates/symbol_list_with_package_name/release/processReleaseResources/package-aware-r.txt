@@ -1,4 +1,4 @@
-com.example.wearbaroalt
+com.ajimsjames.wearbaroalt
 attr action
 attr alpha
 attr argType

@@ -4,15 +4,15 @@
     "type": "OPTIMIZED_PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.wearbaroalt",
+  "applicationId": "com.ajimsjames.wearbaroalt",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 3,
-      "versionName": "1.2.0",
+      "versionCode": 4,
+      "versionName": "2.0.0",
       "outputFile": "resources-release-optimize.ap_"
     }
   ],

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.wearbaroalt"
-    android:versionCode="3"
-    android:versionName="1.2.0" >
+    package="com.ajimsjames.wearbaroalt"
+    android:versionCode="4"
+    android:versionName="2.0.0" >
 
     <uses-sdk
         android:minSdkVersion="30"
@@ -18,10 +18,10 @@
         android:required="true" />
 
     <permission
-        android:name="com.example.wearbaroalt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.ajimsjames.wearbaroalt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.wearbaroalt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.ajimsjames.wearbaroalt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +33,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault" >
         <activity
-            android:name="com.example.wearbaroalt.MainActivity"
+            android:name="com.ajimsjames.wearbaroalt.MainActivity"
             android:exported="true"
             android:taskAffinity=""
             android:theme="@android:style/Theme.DeviceDefault" >
@@ -54,7 +54,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.wearbaroalt.androidx-startup"
+            android:authorities="com.ajimsjames.wearbaroalt.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

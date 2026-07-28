@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wearbaroalt"
+    namespace = "com.ajimsjames.wearbaroalt"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.wearbaroalt"
+        applicationId = "com.ajimsjames.wearbaroalt"
         minSdk = 30
         targetSdk = 33
-        versionCode = 3
-        versionName = "1.2.0"
+        versionCode = 4
+        versionName = "2.0.0"
 
         vectorDrawables {
             useSupportLibrary = true
