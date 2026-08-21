@@ -29,7 +29,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.wear.compose.foundation.CurvedLayout
+import androidx.wear.compose.foundation.curvedComposable
 import androidx.wear.compose.material.Text
+
 import java.util.Locale
 import kotlin.math.*
 
@@ -365,8 +368,10 @@ fun BaroAltScreen() {
         CurvedLayout(
             anchor = 90f,
             anchorType = androidx.wear.compose.foundation.AnchorType.Center,
+            angularDirection = androidx.wear.compose.foundation.CurvedDirection.Angular.CounterClockwise,
             modifier = Modifier.fillMaxSize()
         ) {
+
             curvedComposable {
                 MaterialNavPill("Baro", selected = selectedTab == BaroTab.BAROMETER) { selectedTab = BaroTab.BAROMETER }
             }

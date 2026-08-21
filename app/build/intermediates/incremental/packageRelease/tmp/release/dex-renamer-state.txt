@@ -1,4 +1,0 @@
-#Tue Jul 28 10:56:49 IST 2026
-base.0=/home/aju/WearBaroAlt/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
